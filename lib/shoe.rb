@@ -9,7 +9,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if !BRANDS.detect {|x| x==brand }
-      brands=brand
+      BRANDS << brand
     end
   end
 
@@ -18,10 +18,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def brands=(brand)
-    BRANDS << brand 
-  end
-  
   def brands
     BRAND 
   end
