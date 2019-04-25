@@ -4,7 +4,9 @@ class Shoe
   BRAND = []
   
   def initialize(brand)
-    @brand = brand
+    if !BRAND.detect {|x| x==brand }
+      brands=brand
+    end
   end
 
   def cobble
