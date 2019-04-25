@@ -5,7 +5,8 @@ class Shoe
   BRANDS = []
   
   def initialize(brand)
-    if !BRAND.detect {|x| x==brand }
+    @brand = brand
+    if !BRANDS.detect {|x| x==brand }
       brands=brand
     end
   end
@@ -16,8 +17,7 @@ class Shoe
   end
 
   def brands=(brand)
-    @brand = brand
-    BRAND << brand 
+    BRANDS << brand 
   end
   
   def brands
