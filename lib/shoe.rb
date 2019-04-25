@@ -24,6 +24,6 @@ class Shoe
   
 end
 
-binding.pry 
+#binding.pry 
 
-puts "hello"
+#puts "hello"
