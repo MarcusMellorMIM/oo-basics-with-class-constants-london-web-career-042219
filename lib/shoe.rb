@@ -19,4 +19,8 @@ class Shoe
     BRAND << brand 
   end
   
+  def brands
+    BRAND 
+  end
+  
 end
